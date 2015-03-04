@@ -1,0 +1,34 @@
+﻿body {
+    background-color: white;
+    color: orange;
+}
+
+h1 {
+    font-family: Verdana;
+    font-size: 18pt;
+}
+
+#image {
+    background-image: url(logo.jpg);
+    height: 200px;
+    border: outset;
+    width: 335px;
+    border-color: orange;
+    float: right;
+    position: relative;
+    border-width: thick;
+}
+
+p {
+    font-family: Verdana;
+    color: black;
+    font-size: 15pt;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+hr {
+    height: 2px;
+    border-top: 1px solid orange;
+}

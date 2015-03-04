@@ -1,0 +1,18 @@
+﻿body {
+    background-color:lightgoldenrodyellow;
+}
+
+table {
+    background-color: lightsalmon;
+    border-color:red;
+}
+
+tr#header{
+    background-color:red;
+    color:lightgoldenrodyellow;
+    text-align:center;
+}
+
+td {
+    border-color:red;
+}

@@ -1,0 +1,47 @@
+﻿body {
+    background-image:url(images/hout.jpg);
+    background-repeat:repeat;
+}
+
+table {
+    table-layout:fixed;
+    width: 256px; height: 256px;
+    border:solid;
+    border-width:thick;
+    float:left;
+    border-collapse:collapse;
+    border-color:darkred;
+    margin-right:40px;
+    border-bottom-color:black;
+    border-right-color:black;
+}
+
+#text {
+    padding-left:20px;
+    width:100%;
+    text-align:left;
+    float:right;
+
+}
+td {
+    width:32px;
+    height:32px;
+    text-align:center;
+}
+
+td#bg1 {
+    background-image:url("images/witte-marmer.jpg");
+    border:solid;
+    border-color:darkred;
+}
+
+td#bg2{
+    background-image:url("images/zwarte-marmer.jpg");
+    border:solid;
+    border-color:darkred;
+}
+
+img {
+    width:20px;
+    height:20px;
+}

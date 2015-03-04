@@ -1,0 +1,10 @@
+﻿body {
+}
+
+table {
+    border:solid;
+    border-width:medium;
+    border-color:black;
+    width:300px;
+    height:300px;
+}
