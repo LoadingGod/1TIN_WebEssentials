@@ -1,0 +1,56 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 5, 2015, 11:10:47 AM
+    Author     : Fraa
+*/
+
+body {
+    background-color: lightblue;
+    color:white;
+}
+
+img#titel{
+    float:left;
+    margin-bottom: 10px;
+    width: 18%;
+}
+
+div#headertext{
+    background-color: darkslateblue;
+    height: 153px;
+    width: 72%;
+    clear:none;
+    float: left;
+    margin-left: 10px;  
+}
+
+nav{
+    background-color: darkslateblue;
+    width: 15%;
+    font-weight: bold;
+    clear: left;
+    float: left;
+    height: 700px;
+}
+
+a{
+    color: lightgray;
+    text-decoration: none;
+}
+
+section{
+    background-color:darkslateblue;
+    margin-left: 10px;
+    width: 75%;
+    height: 700px;
+    clear: none;
+    float: left;
+}
+
+ul{
+    list-style: none;
+}
