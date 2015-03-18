@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Oef 06</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript">
+            function printEven() {
+                var tekst = "Even getallen: ";
+                var max = parseInt(document.getElementById('inputtext').value);
+                if (max >= 50) {
+                    window.alert("Het getal is <0 of > 50");
+                } else {
+                    for (var i = 0; i <= max; i++) {
+                        if (i % 2 === 0) {
+                            tekst += i + " ";
+                        }
+                    }
+                    document.getElementById('even').value = tekst;
+                }
+            }
+        </script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <form>
+            Geef een getal tussen 0 en 50: <input type="text" id="inputtext"></br>
+            <input type="button" value="Genereer even getallen" id="btnGenereer" onclick="printEven()">
+            <input type="text" id="even">
+        </form>
+
+    </body>
+</html>

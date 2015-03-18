@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Oef 04</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript">
+            function genereer() {
+                var voornaam = document.getElementById('voornaam').value;
+                var achternaam = document.getElementById('achternaam').value;
+                var melding = document.getElementById('melding');
+            if (voornaam !== "" || achternaam !== "") {
+                melding.value = "Hallo, " + voornaam + " " + achternaam;
+            }
+            else {
+                melding.value = "Hallo, John Doe";
+            }    
+            }
+            
+        </script>
+    </head>
+    <body>
+        Voornaam <input type="text" id="voornaam"></br>
+        Achternaam <input type="text" id="achternaam"></br>
+        <input type="button" value="Genereer" onclick="genereer()"><input type="text" id="melding">
+    </body>
+</html>
