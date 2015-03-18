@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Oef 08</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script>
+            function klik() {
+                var txt = document.getElementById('day').value.toLowerCase();
+                var txt2= "";
+                switch (txt) {
+                    case "monday":
+                        txt2  = "The first day of the week";
+                        break;
+                    case "tuesday":
+                        txt2 = "The second day of the week";
+                        break;
+                    case "wednesday":
+                        txt2 = "The third day of the week";
+                        break;
+                    case "thursday":
+                        txt2 = "The fourth day of the week";
+                        break;
+                    case "friday":
+                        txt2 = "The fifth day of the week";
+                        break;
+                    case "saturday":
+                        txt2 = "The sixth day of the week";
+                        break;
+                    case "sunday":
+                        txt2 = "The seventh day of the week";
+                        break;
+                    default:
+                        window.alert("ERROR: Enter a day of the week please!")
+                        break;
+                }
+                document.getElementById('dayofweek').value = txt2;
+            }
+        </script>
+    </head>
+    <body>
+        <form>
+            Geef een dag in: <input type="text" id="day"></br>
+            <input type="button" id="generateButton" value="Generate" onclick="klik()"><input type="text" id="dayofweek">
+        </form>
+    </body>
+</html>
