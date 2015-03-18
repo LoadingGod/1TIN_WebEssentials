@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Oef07</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript">
+            function klik() {
+                var emailadres = document.getElementById('emailadres').value.toString();
+                var pos = emailadres.indexOf('.');
+                document.getElementById('naamdeel1').value = emailadres.substring(0, pos);
+                emailadres = emailadres.substring(pos+1);
+                var pos = emailadres.indexOf('@');
+                document.getElementById('naamdeel2').value = emailadres.substring(0, pos);
+                emailadres = emailadres.substring(pos+1);
+                var pos = emailadres.indexOf('.');
+                document.getElementById('subdomein').value = emailadres.substring(0, pos);
+                emailadres = emailadres.substring(pos+1);
+                document.getElementById('domein').value = emailadres;
+                }
+        </script>
+    </head>    
+    <body>
+        <form>
+            Geef een geldig emailadres in: <input type="text" id="emailadres"></br>
+            Naam Deel 1 <input type="text" id="naamdeel1"></br>
+            Naam Deel 2 <input type="text" id="naamdeel2"></br>
+            Subdomein <input type="text" id="subdomein"></br>
+            Domein <input type="text" id="domein"></br>
+            <input type="button" value="Splits op" id="splitButton" onclick="klik()">            
+        </form>
+    </body>
+</html>
