@@ -1,0 +1,26 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 19, 2015, 12:10:16 PM
+    Author     : Fraa
+*/
+
+input#eightbitfloat, #teken,#exponent,#mantissa, #verwerking, #decimaal{
+    margin-left:20px;
+}
+
+input#tekenuitleg,#exponentuitleg, #mantissauitleg {
+    width:200px;
+}
+
+input#eightbitfloat, #verwerking, #decimaal {
+    width:330px;
+}
+
+div#text {
+    float:left;
+    font-size: 18px;
+}
