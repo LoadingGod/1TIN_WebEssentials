@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+            <title>Oef 01</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css"/>
+        <script>
+            function mouseover() {
+                var txt = document.getElementsByTag('td').value;
+                document.getElementById('snul').value = txt;
+            }
+        </script>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td onmouseover="mouseover()" >Arial</td>
+                <td onmouseover="mouseover()" >Times</td>
+                <td><td onmouseover="mouseover()" >Courier</td>
+                <td>Georgia</td>
+                <td>Sans-Serif</td>
+                <td>Serif</td>
+                <td>Verdana</td>
+            </tr>
+            <tr>
+                <td>8pt</td>
+                <td>10pt</td>
+                <td>12pt</td>
+                <td>16pt</td>
+                <td>20pt</td>
+                <td>24pt</td>
+                <td>28pt</td>
+            </tr>
+        </table>
+            <p id="snul">
+                Voorbeeld tekst
+            </p>
+    </body>
+</html>
