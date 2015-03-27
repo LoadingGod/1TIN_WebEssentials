@@ -1,0 +1,79 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 26, 2015, 11:11:40 AM
+    Author     : Fraa
+*/
+
+body {
+        background-color: #333;
+}
+
+header {
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 16pt;
+    text-align: center;
+    background-image: url("images/bg.jpg");
+    color: white;
+}
+
+nav#topmenu{
+    text-align: center;
+}
+
+nav#topmenu  ul  li {
+    display: inline;
+}
+
+nav#leftmenu {
+    font-size: 15pt;
+    font-weight: bold;
+}
+
+section#menu {
+    background-color: black;
+}
+
+section#links{
+    float:left;
+    width:20%;
+    clear:left;
+    height: 800px;
+    background-color: #222;
+}
+
+section#midden{
+    width: 60%;
+    height: 800px;
+    background-color:#444;
+    color:white;
+    float: left;
+    margin-right:20px;
+    margin-left:20px;
+
+}
+
+section#rechts {
+    height:800px;
+    width:20%;
+    background-color:#222;
+}
+
+footer {
+    width:100%;
+    height:10%;
+    position:absolute;
+    bottom:0;
+    left:0; 
+    background-color: #222;
+    color:white;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}

@@ -11,34 +11,36 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css"/>
         <script>
-            function mouseover() {
-                var txt = document.getElementsByTag('td').value;
-                document.getElementById('snul').value = txt;
+            function font(tekst) {
+                document.getElementById('font').style.fontFamily = tekst;
+            }
+            function fontsize(grootte) {
+                document.getElementById('font').style.fontSize = grootte;
             }
         </script>
     </head>
     <body>
         <table>
             <tr>
-                <td onmouseover="mouseover()" >Arial</td>
-                <td onmouseover="mouseover()" >Times</td>
-                <td><td onmouseover="mouseover()" >Courier</td>
-                <td>Georgia</td>
-                <td>Sans-Serif</td>
-                <td>Serif</td>
-                <td>Verdana</td>
+                <td onmouseover="font('Arial')" >Arial</td>
+                <td onmouseover="font('Times New Roman')" >Times</td>
+                <td><td onmouseover="font('Courier')">Courier</td>
+                <td onmouseover="font('Georgia')">Georgia</td>
+                <td onmouseover="font('Sans-Serif')">Sans-Serif</td>
+                <td onmouseover="font('Serif')">Serif</td>
+                <td onmouseover="font('Verdana')">Verdana</td>
             </tr>
             <tr>
-                <td>8pt</td>
-                <td>10pt</td>
-                <td>12pt</td>
-                <td>16pt</td>
-                <td>20pt</td>
-                <td>24pt</td>
-                <td>28pt</td>
+                <td onmouseover="fontsize('8pt')">8pt</td>
+                <td onmouseover="fontsize('10pt')">10pt</td>
+                <td onmouseover="fontsize('12pt')">12pt</td>
+                <td onmouseover="fontsize('16pt')">16pt</td>
+                <td onmouseover="fontsize('20pt')">20pt</td>
+                <td onmouseover="fontsize('24pt')">24pt</td>
+                <td onmouseover="fontsize('28pt')">28pt</td>
             </tr>
         </table>
-            <p id="snul">
+            <p id="font">
                 Voorbeeld tekst
             </p>
     </body>
