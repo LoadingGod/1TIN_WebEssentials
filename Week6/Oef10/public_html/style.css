@@ -13,14 +13,23 @@ input#eightbitfloat, #teken,#exponent,#mantissa, #verwerking, #decimaal{
 }
 
 input#tekenuitleg,#exponentuitleg, #mantissauitleg {
-    width:200px;
+    width:300px;
 }
 
 input#eightbitfloat, #verwerking, #decimaal {
-    width:330px;
+    width:430px;
 }
 
 div#text {
     float:left;
-    font-size: 18px;
+    font-size: 17px;
+    margin-top: -5px;
+}
+
+form {
+    margin-top: 40px;
+}
+
+input[type=button] {
+    width:160px;
 }

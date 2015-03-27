@@ -9,14 +9,12 @@ and open the template in the editor.
         <title>Oef 10</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script type="text/css">
-            
-        </script>
+        <script type="text/javascript" src="script.js"></script>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <div id="text">
-            Fictieve float in 8-bit notatie</br>
+            Fictieve float in 8-bit notatie</br></br>
             Teken</br>
             Exponent</br>
             Mantissa</br>
@@ -24,12 +22,17 @@ and open the template in the editor.
             Decimaal
         </div>
         <form>
-            <input type="text" id="eightbitfloat"></br>
+            <input type="text" id="eightbitfloat"></br></br>
             <input type="text" id="teken"><input type="text" id="tekenuitleg"></br>
             <input type="text" id="exponent"><input type="text" id="exponentuitleg"></br>
             <input type="text" id="mantissa"><input type="text" id="mantissauitleg"></br>
             <input type="text" id="verwerking"></br>
             <input type="text" id="decimaal">
+            </br></br>
+            <input type="button" value="Stap 1 = Splits op" onclick="klik('splits')" id="splitsButton"/>
+            <input type="button" value="Stap 2 = Uitleg" onclick="klik('uitleg')" id="uitlegButton"/>
+            <input type="button" value="Stap 3 = Verwerk" onclick="klik('verwerk')" id="verwerkButton"/>
+            <input type="button" value="Stap 4 = Decimaal" onclick="klik('decimaal')" id="decimaalButton"/>
         </form>
     </body>
 </html>
