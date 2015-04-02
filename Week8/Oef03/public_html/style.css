@@ -1,0 +1,73 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 2, 2015, 11:12:17 AM
+    Author     : Fraa
+*/
+td, table {
+    border-color: black;
+    border-width: 1px;
+    border-style: dotted;
+}
+td {
+    width: 100px;
+}
+
+td#crosshair {
+    cursor: crosshair;
+}
+
+td#pointer {
+    cursor: pointer;
+}
+
+td#move {
+    cursor: move;
+}
+
+td#n-resize {
+    cursor: n-resize;
+}
+
+td#ne-resize {
+    cursor: ne-resize;
+}
+
+td#e-resize {
+    cursor: e-resize;
+}
+
+td#se-resize {
+    cursor: se-resize;
+}
+
+td#s-resize {
+    cursor: s-resize;
+}
+
+td#sw-resize {
+    cursor: sw-resize;
+}
+
+td#w-resize {
+    cursor: w-resize;
+}
+
+td#nw-resize {
+    cursor: nw-resize;
+}
+
+td#text {
+    cursor: text;
+}
+
+td#wait {
+    cursor: wait;
+}
+
+td#help {
+    cursor: help;
+}
