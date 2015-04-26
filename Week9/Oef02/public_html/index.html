@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JQuery voorbeeld 1</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="../../js/jquery-2.1.3.min.js"></script>
+        <script type="text/javascript" >
+            $(document).ready(function () {
+                $('ul ul li:first').css("background", "blue");      // in de tweede ul het eerste li element
+                $('ul ul li:first').parent().parent().css("background", "yellow");  //vanaf li b1, twee niveaus naar boven (2de li)
+                $('ul ul li:first').parent().parent().next().css("background", "green"); //li class a
+                $('li').eq(0).css("background", "black"); //Equals werkt vanaf index 0
+                $('li:first').nextAll().css("background", "orange"); //eerste li, alle volgende orange
+                $('li').filter(".a").css("background", "gray"); //Filteren op class a
+                $('li').each(function () {
+                    if ($(this).text() === "a") {
+                        $(this).css("color", "blue");
+                    }
+                });
+                //Elke li een functie uitvoeren
+                //wanneer de inhoud "a" is -> color blue
+            });
+        </script>
+    </head>
+    <body> <ul>
+            <li>a</li>
+            <li><ul>
+                    <li>b1</li>
+                    <li>b2</li>
+                    <li>b3</li>
+                </ul> </li>
+            <li class="a">c</li>
+        </ul>
+    </body>
+</html>
