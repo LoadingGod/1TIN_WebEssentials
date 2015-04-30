@@ -1,0 +1,5 @@
+C:\Users\Fraa\Documents\webessentials\Week9\Oef04\Oef04\bin\Oef04.dll.config
+C:\Users\Fraa\Documents\webessentials\Week9\Oef04\Oef04\bin\Oef04.dll
+C:\Users\Fraa\Documents\webessentials\Week9\Oef04\Oef04\bin\Oef04.pdb
+C:\Users\Fraa\Documents\webessentials\Week9\Oef04\Oef04\obj\Debug\Oef04.dll
+C:\Users\Fraa\Documents\webessentials\Week9\Oef04\Oef04\obj\Debug\Oef04.pdb

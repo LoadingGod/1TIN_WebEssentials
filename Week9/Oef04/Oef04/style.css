@@ -1,0 +1,32 @@
+﻿body { 
+    background-color:black;
+    color:white;
+}
+
+form{
+    border-color:white;
+    border-width:5px;
+    border-style:solid;
+    padding:10px;
+    position:absolute;
+    display:none;
+    background-color:#ff6a00;
+    color:white;
+    width:200px;
+    height:300px;
+}
+
+button{
+    width:100px;
+    padding:10px;
+}
+
+input{
+    width:178px;
+    padding:10px;
+}
+
+article{
+    width:500px;
+
+}
