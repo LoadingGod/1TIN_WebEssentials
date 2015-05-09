@@ -1,0 +1,52 @@
+﻿body {
+    background-color:black;
+    color:white;
+}
+
+tr:nth-child(2n+1){
+    background-color:#222;
+    color:#FFF;
+}
+
+td{
+    padding:20px;
+}
+
+ul{
+    list-style:none;
+    width:30px;
+}
+
+select{
+    background-color:#222;
+    color:#FFF; 
+}
+
+input{
+    background-color:#222;
+    color:#FFF;
+    width:400px;
+}
+
+label{
+    display: inline;
+    margin-left:-400px;
+}
+
+textarea{
+    background-color:#222;
+    color:#FFF;
+    width:400px;
+    height:200px;
+}
+
+button{
+    width:100%;
+}
+
+#colorpicker{
+    display:inline-block;
+    margin-left:50px;
+    width:410px;
+    height:40px;
+}

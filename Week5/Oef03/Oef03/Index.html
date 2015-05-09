@@ -1,0 +1,81 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width; initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <script type="text/javascript">
+        function ChangeColor(color) {              
+            var table = document.getElementById('table');
+            for (var i = 0, row; row = table.rows[i]; i++) {
+                if (i % 2 == 0) {
+                    row.style.background = color;
+                } else {
+                    row.style.background = "#222";
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Formulier</h1>
+    <div>Kies je eigen Kleur!<input type="color" id="colorpicker" oninput="ChangeColor(colorpicker.value)" /><br /><br /></div>
+    <form action="mailto:claessensfrankie@gmail.com" method="POST" enctype="text/plain">
+        <table id="table">
+            <tr>
+                <td><p>Naam:</p></td>
+                <td><input type="text" placeholder="Naam" /></td>
+            </tr>
+            <tr>
+                <td><p>Paswoord: </p></td>
+                <td><input type="password" placeholder="Paswoord" /></td>
+            </tr>
+            <tr>
+                <td><p>Land</p></td>
+                <td>
+                    <select>
+                        <option value="belgie">Belgie</option>
+                        <option value="nederland">Nederland</option>
+                        <option value="duitsland">Duitsland</option>
+                        <option value="frankrijk">Frankrijk</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Geslacht:</td>
+                <td>
+                    <input type="radio" value="man" name="geslacht" /><label for="man">Mannelijk</label>
+                    <input type="radio" value="vrouw" name="geslacht" /><label for="man">Vrouwelijk</label>
+                    <input type="radio" value="trans" name="geslacht" /><label for="man">Transsexueel</label>
+                </td>
+            </tr>
+            <tr>
+                <td><p>Besturingssysteem:</p></td>
+                <td>
+                    <input type="checkbox" value="windows" name="os" /><label for="windows">Windows</label><br />
+                    <input type="checkbox" value="macos" name="os" /><label for="macos">Mac OS</label><br />
+                    <input type="checkbox" value="linuxs" name="os" /><label for="linux">Linux</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Commentaar: </p>
+                </td>
+                <td>
+                    <textarea></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td><button type="reset">Alles wissen</button></td>
+                <td><button type="submit">Verzenden</button></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

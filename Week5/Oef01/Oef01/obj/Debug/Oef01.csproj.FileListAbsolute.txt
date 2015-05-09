@@ -1,0 +1,6 @@
+C:\Users\Fraa\Documents\webessentials\Week5\Oef01\Oef01\bin\Oef01.dll.config
+C:\Users\Fraa\Documents\webessentials\Week5\Oef01\Oef01\bin\Oef01.dll
+C:\Users\Fraa\Documents\webessentials\Week5\Oef01\Oef01\bin\Oef01.pdb
+C:\Users\Fraa\Documents\webessentials\Week5\Oef01\Oef01\obj\Debug\Oef01.csprojResolveAssemblyReference.cache
+C:\Users\Fraa\Documents\webessentials\Week5\Oef01\Oef01\obj\Debug\Oef01.dll
+C:\Users\Fraa\Documents\webessentials\Week5\Oef01\Oef01\obj\Debug\Oef01.pdb
