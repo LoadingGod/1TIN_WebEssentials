@@ -1,0 +1,48 @@
+﻿    <!DOCTYPE html>
+<html>
+<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" type="text/css" href="./css/opmaak.css" />
+	<title> vb1_post</title>
+</head>
+<body>
+
+<form  method="post" action="vb1verwerking.php">
+	<div class="tabel">
+		<div class="rij">
+			<div class="titel">Voornaam:</div>
+			<div class="invoer"><input type="text" name="vnaam" /></div>
+		</div>
+		<div class="rij">
+			<div class="titel">Achternaam:</div>
+			<div class="invoer"><input type="text" name="anaam" /></div>
+		</div>
+		<div class="rij">
+			<div class="titel">Email:</div>
+			<div class="invoer"><input type="text" name="email" /></div>
+		</div>
+		<div class="rij">
+			<div class="titel">Geslacht:</div>
+			<div class="invoer">
+				<input type="radio" name="gesl" value="m" checked="checked"/> m
+		    		<input type="radio" name="gesl" value="v"/> v
+			</div>
+		</div>
+		<div class="rij">
+			<div class="titel">Leeftijd:</div>
+			<div class="invoer">
+				<select name="lft">
+					<option value="Jonger dan 20">jonger dan 20</option>
+					<option value="Tussen 21 en 40">tussen 21 en 40</option>
+					<option value="Tussen 41 en 60">tussen 41 en 60</option>
+					<option value="Ouder dan 60">ouder dan 60</option>
+				</select>			
+			</div>
+
+		</div>
+	</div>
+<input type="submit" value="Verzend"/>
+</form>
+
+</body>
+</html>

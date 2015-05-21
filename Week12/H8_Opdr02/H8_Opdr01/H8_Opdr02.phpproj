@@ -1,0 +1,38 @@
+"General"
+{
+"ProjectType" = "local"
+"AutoLoadTemplate" = "%s.php;class.%s.php;"
+"IncludeDirs" = ""
+}
+"Configurations"
+{
+    "Local|PHP 5.6"
+    {
+    }
+    "Staging|PHP 5.6"
+    {
+    }
+    "Production|PHP 5.6"
+    {
+    }
+}
+"Files"
+{
+    "vb1_post.html"
+    {
+    "ProjRelPath" = "T"
+    }
+    "vb1verwerking.php"
+    {
+    "ProjRelPath" = "T"
+    }
+}
+"ProjStartupServices"
+{
+}
+"Globals"
+{
+}
+"References"
+{
+}

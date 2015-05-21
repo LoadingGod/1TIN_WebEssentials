@@ -1,0 +1,70 @@
+"General"
+{
+"ProjectType" = "local"
+"AutoLoadTemplate" = "%s.php;class.%s.php;"
+"IncludeDirs" = ""
+}
+"Configurations"
+{
+    "Local|PHP 5.6"
+    {
+    }
+    "Staging|PHP 5.6"
+    {
+    }
+    "Production|PHP 5.6"
+    {
+    }
+}
+"Files"
+{
+    "index.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "vb5a"
+    {
+    "ProjRelPath" = "T"
+    }
+    "vb5a\\.htaccess"
+    {
+    "ProjRelPath" = "T"
+    }
+    "vb5a\\vb5.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "vb5b"
+    {
+    "ProjRelPath" = "T"
+    }
+    "vb5b\\.htaccess"
+    {
+    "ProjRelPath" = "T"
+    }
+    "vb5b\\vb5.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "vb5c"
+    {
+    "ProjRelPath" = "T"
+    }
+    "vb5c\\.htaccess"
+    {
+    "ProjRelPath" = "T"
+    }
+    "vb5c\\vb5.php"
+    {
+    "ProjRelPath" = "T"
+    }
+}
+"ProjStartupServices"
+{
+}
+"Globals"
+{
+}
+"References"
+{
+}
