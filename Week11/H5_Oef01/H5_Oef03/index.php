@@ -9,7 +9,6 @@ for ($rij = 1; $rij <= $length; $rij++)
 	}
 	
 function MaakRij($rij, $length){
-n
 	for($kolom = 1; $kolom <= $length; $kolom++)
 	{	
 		echo "<td>";
