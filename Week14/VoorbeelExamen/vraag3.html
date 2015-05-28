@@ -1,29 +1,119 @@
 <!DOCTYPE HTML>
 <html>
-<head>
-	<meta charset="utf-8" />
-	<title>Vraag 3: Proefexamen 2013-2014</title>
-</head>
+    <head>
+        <meta charset="utf-8" />
+        <title>Vraag 3</title>
+        <link href="vraag3.css" rel="stylesheet" type="text/css"/>
+        <script type="text/javascript">
+            var image1 = null;
+            var image1id;
+            var image2 = null;
+            var image2id;
+            var attemptsCounter = 0;
+            var turnCounter = 1;
+            var finishedCounter = 0;
+            var afbeeldingen = new Array();
+            afbeeldingen[0] = "ansje.gif";
+            afbeeldingen[1] = "anneke.gif";
+            afbeeldingen[2] = "knotje.gif";
+            afbeeldingen[3] = "takkie.gif";
+            afbeeldingen[4] = "vlekkie.gif";
+            afbeeldingen[5] = "tantemies.gif";
+            afbeeldingen[6] = "ansje.gif";
+            afbeeldingen[7] = "anneke.gif";
+            afbeeldingen[8] = "knotje.gif";
+            afbeeldingen[9] = "takkie.gif";
+            afbeeldingen[10] = "vlekkie.gif";
+            afbeeldingen[11] = "tantemies.gif";
+            window.onload = LoadImages;
 
-<body>
+            function LoadImages() {
+                var table = document.getElementById('imagetable');
+                var tds = table.getElementsByTagName("td");
+                for (var i = 0; i < tds.length; i++) {
+                    tds[i].style.backgroundImage = 'url(figuren/voorkant.jpg)';
+                }
+            }
 
-<!--
-Hier de tekst voor de array
+            function ClickCell(elementid) {
+                document.getElementById('speelbtn').disabled = true;
+                document.getElementById(elementid).style.backgroundImage = 'url(figuren/' + afbeeldingen[elementid] + ')';
+                var element = document.getElementById(elementid);
+                style = element.currentStyle || window.getComputedStyle(element, false);
+                elementbgurl = style.backgroundImage.slice(4, -1);
+                if (turnCounter === 1) {
+                    attemptsCounter++;
+                    turnCounter = 2;
+                    image1 = elementbgurl;
+                    image1id = elementid;
+                } else if (turnCounter === 2) {
+                    turnCounter = 1;
+                    image2 = elementbgurl;
+                    image2id = elementid;
+                    CheckImages();
+                }
+            }
 
-var afbeeldingen = new Array();
-afbeeldingen[0]="ansje.gif";
-afbeeldingen[1]="anneke.gif";
-afbeeldingen[2]="knotje.gif";
-afbeeldingen[3]="takkie.gif";
-afbeeldingen[4]="vlekkie.gif";
-afbeeldingen[5]="tantemies.gif";
-afbeeldingen[6]="ansje.gif";
-afbeeldingen[7]="anneke.gif";
-afbeeldingen[8]="knotje.gif";
-afbeeldingen[9]="takkie.gif";
-afbeeldingen[10]="vlekkie.gif";
-afbeeldingen[11]="tantemies.gif";
--->
+            function CheckImages() {
+                if (image1 === image2) {
+                    document.getElementById(image1id).style.backgroundImage = '';
+                    document.getElementById(image1id).onclick = '"event.cancelBubble = true;"';
+                    document.getElementById(image2id).style.backgroundImage = '';
+                    document.getElementById(image2id).onclick = '"event.cancelBubble = true;"';
+                    CheckGame();
 
-</body>
+                } else {
+                    document.getElementById(image1id).style.backgroundImage = 'url(figuren/voorkant.jpg)';
+                    document.getElementById(image2id).style.backgroundImage = 'url(figuren/voorkant.jpg)';
+                }
+            }
+
+            function CheckGame() {
+                finishedCounter++;
+                if (finishedCounter === 6) {
+                    var div = document.getElementById('finishedDIV');
+                    div.style.display = 'block';
+                    div.innerHTML = div.innerHTML + attemptsCounter + " pogingen!";
+                    document.getElementById('speelbtn').disabled = false;
+                }
+            }
+
+            function PlayAgain() {
+                window.location.reload();
+            }
+
+        </script>
+    </head>
+
+    <body>
+        <div id="wrapper">
+            <h1>Speel Jip en Janneke Memory</h1>
+            <table id="imagetable">
+                <tr>
+                    <td id="0" onclick="ClickCell(this.id)"></td>
+                    <td id="1" onclick="ClickCell(this.id)"></td>
+                    <td id="2" onclick="ClickCell(this.id)"></td>
+                    <td id="3" onclick="ClickCell(this.id)"></td>
+                </tr>
+                <tr>
+                    <td id="4" onclick="ClickCell(this.id)"></td>
+                    <td id="5" onclick="ClickCell(this.id)"></td>
+                    <td id="6" onclick="ClickCell(this.id)"></td>
+                    <td id="7" onclick="ClickCell(this.id)"></td>
+                </tr>
+                <tr>
+                    <td id="8" onclick="ClickCell(this.id)"></td>
+                    <td id="9" onclick="ClickCell(this.id)"></td>
+                    <td id="10" onclick="ClickCell(this.id)"></td>
+                    <td id="11" onclick="ClickCell(this.id)"></td>
+                </tr>
+            </table>
+            <button id="speelbtn" name="Speel" onclick="PlayAgain()">Speel Opnieuw</button>
+            <br/>
+            <div id="finishedDIV">
+                <img src="figuren/voorkant.jpg" alt=""/>
+                Gefeliciteerd! Je loste de puzzel op in
+            </div>
+        </div>
+    </body>
 </html>
