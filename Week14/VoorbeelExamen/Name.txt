@@ -1,0 +1,8 @@
+Naam: 
+Voornaam: 
+Lokaal: 
+PCnr:
+Vragenreeks: 1
+Uur: 13:30
+Emailadres: ...@student.pxl.be
+Telefoonnr:  
