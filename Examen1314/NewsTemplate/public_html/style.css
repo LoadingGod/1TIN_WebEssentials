@@ -1,0 +1,90 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 4, 2015, 6:30:45 PM
+    Author     : Frankie Claessens
+*/
+
+body{
+    background-color: black;
+    font-family: 'Verdana';
+    font-size: 10px;
+    text-align: center;
+}
+
+h1{
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Verdana';
+}
+
+nav li{
+    padding: 5px;
+}
+
+#links{
+    float:left;
+    width: 200px;
+}
+
+main header, nav, section, div, article, footer {
+    
+    background-color: white;
+    border-radius: 10px;
+    margin: 15px;
+    padding: 10px;
+}
+
+header{
+    width: auto;
+    text-align: center;
+    margin: 15px;
+}
+
+nav li {
+    list-style: none;
+}
+
+a{
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+    color: white;
+}
+
+nav li:hover{
+    background-color: black;
+}
+
+article{
+    clear: right;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    max-width: 50%;
+    display: inline-block;
+}
+
+#rechts{
+    clear: right;
+    float:right;
+    width:200px;
+    min-width: 220px;
+}
+
+footer{
+    width: auto;
+    text-align: center;
+    vertical-align: middle;
+    margin-bottom: 0px;
+    position: absolute;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+}
