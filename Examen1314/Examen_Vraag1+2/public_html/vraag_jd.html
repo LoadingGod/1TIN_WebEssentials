@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Examen 1314: Vraag 2</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="stijl/vraag_jd.css" rel="stylesheet" type="text/css"/>
+        <script type="text/javascript">            
+            function Move(elementid)
+            {
+                var leftMargin = (window.getComputedStyle(document.getElementById("red")).marginLeft).replace("px", "");
+                var newValue;
+                if(elementid === "leftButton")
+                {
+                    newValue = parseInt(leftMargin) - 25;
+                } else 
+                {
+                    newValue = parseInt(leftMargin) + 25;
+                }
+                document.getElementById("red").style.marginLeft = newValue + "px";
+                document.getElementById("marginValue").innerHTML = newValue + "px";
+            };
+        </script>
+    </head>
+    <body>
+        <input type="button" onclick="Move(this.id)" value="Links" id="leftButton"/>
+        <input type="button" onclick="Move(this.id)" value="Rechts" id="rightButton"/>
+        <div id="red"></div>
+        <span id="marginValue"></span>
+    </body>
+</html>

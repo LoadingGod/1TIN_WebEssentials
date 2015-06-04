@@ -72,18 +72,18 @@ a:hover{
     color: blue;
 }
 
-#MenuDiv {
+nav {
     position:absolute;
     bottom: 0;
     width:100%;
 }
 
-#MenuList{
+nav ul{
     text-align: center;
     list-style: none;
 }
 
-#MenuDiv li {
+nav li {
     width: 18%;
     height:auto;
     background-image: url('figuren/knop.jpg');

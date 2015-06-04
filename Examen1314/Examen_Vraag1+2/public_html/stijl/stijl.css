@@ -1,0 +1,142 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 4, 2015, 6:30:45 PM
+    Author     : Frankie Claessens
+*/
+
+body{
+    background-color: black;
+    background-image: url('../figuren/wereld.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Arial';
+    font-size: 12px;
+    text-align: center;
+}
+
+h1{
+    font-weight: bold;
+    font-size: 16px;
+    font-family: 'Arial Black';
+}
+
+#links{
+    float:left;
+    width: 200px;
+    min-width: 220px;
+}
+
+#lastnews h2{
+    text-align: center;
+}
+
+nav h2{
+    text-align: left;
+}
+
+#links figure img{
+    width:160px;
+    margin-left: -35px;
+}
+
+#links figure figcaption{
+    text-align: center;
+    margin: 2px;
+}
+
+main header, nav, section, aside, article, footer {
+    
+    background-color: hsl(220, 80%, 90%);
+    opacity: 0.7;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin: 15px;
+    padding: 10px;
+    box-shadow: 5px 5px 5px white;
+    border-bottom-color: black;
+    border-right-color: black;
+    border-bottom: 2px;
+    border-right: 2px;
+    border-right-style: solid;
+    border-bottom-style: solid;
+}
+
+header{
+    width: auto;
+    text-align: center;
+    margin: 15px;
+}
+
+nav li {
+    list-style: none;
+}
+
+a{
+    font-size: 14px;
+    color: darkblue;
+    text-decoration: none;
+}
+
+a:hover{
+    color: lightgray;
+}
+
+nav li:hover{
+    background-color: hsl(220, 80%, 60%);
+    color: white;
+}
+
+article{
+    clear: right;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    max-width: 50%;
+    display: inline-block;
+}
+
+#rechts{
+    clear: right;
+    float:right;
+    width:200px;
+    min-width: 220px;
+}
+
+footer{
+    width: auto;
+    text-align: center;
+    vertical-align: middle;
+    margin-bottom: 0px;
+    position: absolute;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+}
+
+table{
+    width:220px;
+}
+
+tr:first-child{
+    background-color: hsl(220, 80%, 70%);
+}
+
+tr:nth-child(2){
+    font-weight: bold;
+}
+
+tr:nth-child(even){
+    background-color: hsl(220, 80%, 80%);
+    color:black;
+}
+
+td#header{
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+}
