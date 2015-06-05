@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>JavaScript validation</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body>
+        <div id="warning"></div>
+        <form method="post" onsubmit="return Validate(this)" onreset="Reset(this)" action="mailto:beuh@test.com">
+            <fieldset>
+                <legend>Gegevens: </legend>
+                Name:<br/><input type="text" name="namefield"/><br/>
+                Email:<br/><input type="text" name="emailfield"/><br/>  <!--type="email" werkt ook, maar dit is een JavaScript voorbeeld-->
+                Age:<br/><input type="text" name="agefield"/>   <!--type="number" werkt ook, maar dit is een JavaScript voorbeeld-->
+            </fieldset>
+            <fieldset>
+                <legend>Bericht: </legend>
+                Subject:<br/><input type="text" name="subjectfield"/><br/>
+                Message:<br/><textarea name="messagefield"></textarea>
+            </fieldset>
+            <input type="reset" name="resetbtn" value="Reset" id="resetbtn"/><input type="submit" name="submitbtn" value="Submit" id="submitbtn"/>
+        </form>
+    </body>
+</html>
