@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<title>Lijsten</title>
+	<link href="start.css" rel="stylesheet"/>
+    <script type="text/javascript">
+        function Controle(form) {
+            var getal = form.naamveld.value;
+            if(getal > 0 && getal < 10){
+                return true;
+            }
+            else {
+                form.naamveld.value = "";
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+	<form onsubmit="return Controle(this)" action="ingave.php" method="GET">
+	<fieldset id="form">
+	<legend>Geef aantal > 0 en <10 </legend>
+        <br />
+        Naam:<input id="naam" type="text" name="naamveld" value=""/>
+        <br/>
+	</fieldset>
+	<input type="submit" id="knop" >OK</button>
+</form>
+</body>	
+<footer>
+	
+</footer>
+</html>

@@ -1,0 +1,43 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 5, 2015, 3:13:08 PM
+    Author     : Fraa
+*/
+
+body{
+    background-color: black;
+    color: white;
+}
+
+input, textArea {
+    margin: 10px;
+    width: 250px;
+}
+
+#submitbtn, #resetbtn{
+    display: inline-block;
+    float:left;
+    width: 120px;
+}
+
+textArea{
+    height: 100px;
+}
+
+fieldset{
+    text-align: left;
+}
+
+form{
+    width: 300px;
+    text-align: center;
+}
+
+#warning{
+    width: 310px;
+    color:black;
+}

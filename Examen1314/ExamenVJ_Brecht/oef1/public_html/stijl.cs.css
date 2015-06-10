@@ -1,0 +1,82 @@
+body{
+ background-image: url('figuren/wereld.jpg');
+    background-repeat:no-repeat;
+    background-position:center;
+    padding:15px;
+    background-color: black;
+}
+h1{
+    font-family: Arial Black;
+    font-size: 15px;
+    font-weight:bold;
+
+}
+img{
+    padding:10px;
+}
+p{
+    padding:5px;
+    font-size: 12px;
+    font-family: Verdana, Arial, sans-serif;
+
+    
+}
+#hoofding{
+    padding-top: 5px;
+    background-color: gray;
+    border-radius: 10px 10px 10px 10px;
+    text-align: center;
+    font-size: 16px;
+}
+div{
+    background-color:transparent;
+    background-color: gray;
+    box-shadow: 5px 5px white;
+
+}
+#center{
+    text-align: center;
+}
+#lijst{
+    padding-top: 5px;
+    width: 250px;
+    border-radius: 0px 10px 10px 10px; 
+}
+ul{
+    padding-left:80px;
+}
+
+
+#nieuws{
+    width: 250px;
+    margin-bottom: 10px;
+    border-radius: 0px 10px 10px 10px
+}
+
+#midden{
+    margin-left:300px;
+    width: 800px;
+    margin-top:  -370px;
+    margin-right: 300px;
+    border-radius: 0px 10px 10px 10px;
+}
+#rechts{
+    margin-top: -500px;
+    float:right;
+    border-radius: 0px 10px 10px 10px;
+
+}
+th{
+    background-color:cadetblue;
+}
+a:hover{
+    background-color:darkblue;
+    color:white;
+}
+#footer{
+    background-color:transparent;
+    background-color: gray;
+    box-shadow: 5px 5px white;
+    float: bottom;
+
+}
