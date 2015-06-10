@@ -1,0 +1,93 @@
+body{
+    background-color: #e7e7e7;
+}
+
+main {
+    width: 1024px;
+    height: 720px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    box-shadow: 15px 10px 50px black;
+    border: 7px solid darkgray;
+    border-radius: 10px;
+    background-color: black;
+}
+header{
+    background: url('figuren/hoofding.jpg') no-repeat black;
+    background-size: cover;
+    width: 100%;
+    color:white;
+}
+
+header h1, h2{
+    text-align: center;
+    font-family: "Arial";
+}
+
+section{
+    margin: 0px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+nav{
+    width: 99.8%;
+    display: table;
+    text-align: center;
+    border: 1px solid black;
+    background-color: lightgray;
+    margin: -19px 0px 0px 0px;
+}
+
+nav ul {
+    width: 90%;
+    display: table;
+}
+
+nav li{
+    display: table-cell;
+    text-align: center;
+}
+
+nav li:hover{
+    background-color: black;
+    color: white;
+}
+
+nav a {
+    height: 100%;
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover{
+    color: white;
+}
+
+article {
+    height: 500px;
+    width: 50%;
+    display: inline-block;
+    padding: 10px;
+}
+
+aside{
+    display: inline-block;
+    float:left;
+    clear:left;
+    background-color: #e7e7e7;
+    width: 200px;
+    border: 1px solid black;
+    margin: 10px;
+}
+
+footer{
+    border: 1px solid black;
+    background-color: white;
+    display: block;
+    width: 99.8%;
+    height: 35px;
+    text-align: center;
+}
+
